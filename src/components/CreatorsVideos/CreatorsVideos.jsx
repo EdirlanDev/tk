@@ -7,7 +7,7 @@ export default function CreatorsVideos({
   items = [
     { thumb: "/assets/v1.jpg", author: "Débora Dai...", duration: "0:30", video: "/assets/v1.mp4" },
     { thumb: "/assets/v2.jpg", author: "Olivie8",      duration: "0:27", video: "/assets/v2.mp4" },
-    { thumb: "/assets/v3.jpg", author: "Olivie8",      duration: "0:18", video: "/creators/v3.mp4" },
+    { thumb: "/assets/v3.jpg", author: "Mikaele sil..",      duration: "0:18", video: "/creators/v3.mp4" },
   ],
 }) {
   const scrollerRef = useRef(null);

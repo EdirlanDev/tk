@@ -4,26 +4,33 @@ import { IoPlay } from "react-icons/io5";
 import "./ProductDetails.css";
 import { MdKeyboardArrowUp , MdKeyboardArrowDown } from "react-icons/md";
 export default function ProductDetails({
-  title = "Sobre este produto",
+  title = "Igredient list",
   details = {
     Recurso:
-      "Sem TEFLON,Sem PFO,Sem BPA,Indução,Antiaderente,Com alça,Térmico,Com tampa",
-    Material: "Cerâmica,Madeira",
-    "Quantidade por embalagem": "1",
+      "Alcohol Denat (SD Alcohol 39-C), Parfum (Fragrance), Aqua (Water), PEG-40 Hydrogenated Castor Oil",
+    Material: "Parfum (Fragrance)",
+    "Quantidade por embalagem": "10",
   },
   video = { src:  ASSET("/assets/demovideo.mp4"), poster:  ASSET("/assets/p1.webp") },
   descriptionHtml = `
-    <p><strong>ENVIO IMEDIATO, PRODUTO À PRONTA ENTREGA!</strong></p>
-    <p>O Conjunto de Panelas Antiaderentes de Indução une praticidade, durabilidade e design moderno para transformar sua rotina na cozinha. Com revestimento cerâmico antiaderente de alta performance, garante o preparo dos alimentos sem grudar, utilizando menos óleo e facilitando a limpeza. Ideal para quem busca refeições mais saudáveis e cozimento uniforme. Produzido com materiais de alta qualidade como alumínio, vidro temperado e cabos em baquelite com resistência térmica, é compatível com diversos tipos de fogão, incluindo por indução.</p>
-    <p><strong>Materiais:</strong></p>
-    <ul>
-      <li>Vidro temperado (tampas com saída de vapor)</li>
-      <li>Revestimento cerâmico (distribuição de calor uniforme)</li>
-      <li>Cabos de Baquelite antitérmico com silicone soft touch</li>
-    </ul>
-    <p><strong>Medidas:</strong></p>
-    <p>Frigideira: 900ml – 20cm x 4,5cm</p>
-  `,
+  <p><strong>Ótimo kit para revendedores:</strong></p>
+  <p>Kit composto por 10 perfumes (5 femininos / 5 masculinos) — enviamos fragrâncias variadas, conforme disponibilidade em estoque no momento da compra.</p>
+  <p>Havendo preferência por fragrâncias, solicite no chat após a compra.</p>
+  <ul>
+    <li>Fragrâncias inspiradas nos perfumes mais famosos;</li>
+    <li>Produtos lacrados;</li>
+    <li>Duração de até 10 horas;</li>
+    <li>Embalagens com 30 ml cada.</li>
+  </ul>
+  <p>Os produtos são enviados nas mesmas embalagens e frascos do anúncio.</p>
+  <p>Pedidos enviados em até 24h úteis após a compra.</p>
+  <p>Enviamos em embalagens seguras para garantir que receba seu pedido em perfeito estado.</p>
+  <p>Dúvidas e estamos à disposição no chat.</p>
+  <p><strong>Gênero:</strong> Unissex</p>
+  <p><strong>Tamanho do produto:</strong> Tamanho de viagem</p>
+  <p><strong>Concentração de fragrância:</strong> EDP</p>
+`,
+
   richImages = [ ASSET("/assets/p1.webp"),  ASSET("/assets/p2.webp"),  ASSET("/assets/p3.webp"),  ASSET("/assets/p4.webp")],
 }) {
   const [open, setOpen] = useState(false);
@@ -45,7 +52,7 @@ export default function ProductDetails({
       </div>
 
       {/* Vídeo */}
-      <div className="pd-subtitle">Vídeo</div>
+      {/* <div className="pd-subtitle">Vídeo</div>
       <div className="pd-videoWrap">
         <video
           className="pd-video"
@@ -55,7 +62,7 @@ export default function ProductDetails({
           playsInline
         />
         
-      </div>
+      </div> */}
 
       {/* Descrição */}
       <div className="pd-subtitle">Descrição</div>
@@ -77,7 +84,7 @@ export default function ProductDetails({
       )}
 
       {/* imagens ricas + Ver menos (só quando aberto) */}
-      {open && (
+      {/* {open && (
         <>
           <div className="pd-rich">
             {richImages.map((src, i) => (
@@ -91,7 +98,7 @@ export default function ProductDetails({
             Ver menos <MdKeyboardArrowUp />
           </button>
         </>
-      )}
+      )} */}
     </section>
   );
 }

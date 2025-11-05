@@ -19,12 +19,15 @@ import FixedActionBar from '../components/FixedActionBar/FixedActionBar.jsx';
 
 export default function Home() {
   const media = [
-    { type: 'image', src: ASSET('/assets/p1.webp'), alt: 'Conjunto de panelas' },
-    { type: 'image', src: ASSET('/assets/p2.webp'), alt: 'Detalhe da tampa' },
-    { type: 'image', src: ASSET('/assets/p3.webp'), alt: 'Frigideira' },
-    { type: 'image', src: ASSET('/assets/p4.webp'), alt: 'Caçarolas' },
-    { type: 'image', src: ASSET('/assets/p5.webp'), alt: 'Cabos madeira' },
-    { type: 'image', src: ASSET('/assets/p6.webp'), alt: 'Kit completo' }
+    { type: 'image', src: ASSET('/assets/perfumes/per1.webp'), alt: 'perfumes' },
+    { type: 'image', src: ASSET('/assets/perfumes/per2.webp'), alt: 'perfumes' },
+    { type: 'image', src: ASSET('/assets/perfumes/per3.webp'), alt: 'perfumes' },
+    { type: 'image', src: ASSET('/assets/perfumes/per4.webp'), alt: 'perfumes' },
+    { type: 'image', src: ASSET('/assets/perfumes/per5.webp'), alt: 'perfumes' },
+    { type: 'image', src: ASSET('/assets/perfumes/per6.webp'), alt: 'perfumes' },
+    { type: 'image', src: ASSET('/assets/perfumes/per7.webp'), alt: 'perfumes' },
+    { type: 'image', src: ASSET('/assets/perfumes/per8.webp'), alt: 'perfumes' },
+    { type: 'image', src: ASSET('/assets/perfumes/per9.webp'), alt: 'perfumes' },
   ];
 
   return (
@@ -35,16 +38,16 @@ export default function Home() {
         <MediaCarousel items={media} />
         <PriceBlock
           discountLabel="-31%"
-          priceCurrent={33.90}
-          priceOriginal={69.90}
-          installments={{ count: 6, value: 5.65, interestFree: true }}
+          priceCurrent={62.90}
+          priceOriginal={239.50}
+          installments={{ count: 6, value: 10.48, interestFree: true }}
           promoText="Desconto de 10%, máximo de R$ 25"
         />
         <TitleMeta
-          title="Jogo Panelas 4 Peças Carvalho Alumínio, Vidro e Baquelite Conjunto Antiaderente indução"
-          rating={4.6}
-          reviewsCount={20}
-          soldCount={97}
+          title="Kit 10 Perfumes 30ml Masculino e Feminino Onlyou Lacrado Hot Sale"
+          rating={4.8}
+          reviewsCount={60}
+          soldCount={269}
         />
         <ShippingBlock
           freeLabel="Frete grátis"
@@ -90,9 +93,30 @@ export default function Home() {
         <FAQ
           title="FAQ"
           items={[
-            { q: 'Serve para fogão de indução?', a: 'Sim, todas as peças são compatíveis com indução.' },
-            { q: 'As tampas são de vidro temperado?', a: 'Sim, e possuem saída de vapor.' },
-            { q: 'Possui garantia?', a: 'Garantia de 12 meses contra defeitos de fabricação.' },
+            {
+      q: 'As fragrâncias são originais?',
+      a: 'Não. São fragrâncias inspiradas em perfumes importados e nacionais famosos, desenvolvidas para oferecer aroma semelhante com excelente fixação.',
+    },
+    {
+      q: 'Posso escolher as fragrâncias?',
+      a: 'Sim. Após realizar a compra, entre em contato pelo chat informando suas preferências. Faremos o possível para atender conforme disponibilidade em estoque.',
+    },
+    {
+      q: 'Qual a durabilidade das fragrâncias?',
+      a: 'A duração média é de até 10 horas, podendo variar conforme o tipo de pele e ambiente.',
+    },
+    {
+      q: 'Qual o tamanho de cada frasco?',
+      a: 'Cada perfume possui 30 ml, ideal para uso pessoal ou revenda.',
+    },
+    {
+      q: 'O produto é lacrado?',
+      a: 'Sim, todos os frascos são enviados lacrados e em embalagens seguras.',
+    },
+    {
+      q: 'O kit é unissex?',
+      a: 'Sim, o kit contém 5 fragrâncias femininas e 5 masculinas, podendo haver variações conforme estoque.',
+    },
           ]}
         />
         <img

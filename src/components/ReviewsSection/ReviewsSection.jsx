@@ -4,26 +4,46 @@ import "./ReviewsSection.css";
 import ProtectedMedia from "../../security/ProtectedMedia";
 
 export default function ReviewsSection({
-  rating = 4.6,
-  total = 20,
+  rating = 4.8,
+  total = 30,
   reviews = [
     {
-      nameMasked: "M**a",
+      nameMasked: "V**a S**a",
       avatar: "",
       stars: 5,
-      text: "gostei muito ainda não usei 💕",
+      text: "Amei Lindos e maravilhosos e veio muito bem embalado💕",
       media: [
-        { src:  ASSET("/assets/rev-1.jpg")},
-        { src:  ASSET("/assets/rev-2.jpeg") },
+        { src: ASSET("/assets/rev1.jpeg") },
+        { src: ASSET("/assets/rev2.jpeg") },
+        { src: ASSET("/assets/rev3.jpeg") },
+        { src: ASSET("/assets/rev4.jpeg") },
+      ],
+    },
+    {
+      nameMasked: "k**e M****a s****s",
+      avatar: ASSET("/assets/perfumes/revisa3.jpg"),
+      stars: 5,
+      text:
+        "Veio super bem embalado, a entrega foi rápida, e os perfumes são muito bons e as embalagens são uma gracinha!",
+      media: [
+        { src: ASSET("/assets/rev5.jpeg") },
+        { src: ASSET("/assets/rev6.jpeg") },
+        { src: ASSET("/assets/rev8.jpeg") },
+        { src: ASSET("/assets/rev9.jpeg") },
       ],
     },
     {
       nameMasked: "D**e d** S**a n**o",
-      avatar:  ASSET("/assets/revisa-1.jpg"),
+      avatar: ASSET("/assets/revisa-1.jpg"),
       stars: 5,
       text:
-        "São lindas ótimo ótima qualidade, recomendo muito!",
-      media: [ ASSET("/assets/rev-3.jpeg"),  ASSET("/assets/rev-4.jpeg")],
+        "Chegaram direitinho bem embalado, só que vem aleatório mas são todos ótimos!, a qualidade do produto é boa.",
+      media: [
+        { src: ASSET("/assets/rev10.jpg") },
+        { src: ASSET("/assets/rev11.jpeg") },
+        { src: ASSET("/assets/rev12.jpeg") },
+        { src: ASSET("/assets/rev13.jpeg") },
+      ],
     },
   ],
 }) {
@@ -46,9 +66,8 @@ export default function ReviewsSection({
             <svg
               key={i}
               viewBox="0 0 24 24"
-              className={`rev-star ${
-                i < Math.floor(rating) ? "filled" : i < rating ? "half" : ""
-              }`}
+              className={`rev-star ${i < Math.floor(rating) ? "filled" : i < rating ? "half" : ""
+                }`}
             >
               <defs>
                 <linearGradient id={`half-${i}`}>
@@ -62,8 +81,8 @@ export default function ReviewsSection({
                   i < Math.floor(rating)
                     ? "#FFD84D"
                     : i < rating
-                    ? `url(#half-${i})`
-                    : "#E5E7EB"
+                      ? `url(#half-${i})`
+                      : "#E5E7EB"
                 }
               />
             </svg>
@@ -104,7 +123,7 @@ export default function ReviewsSection({
                       </svg>
                     ))}
                   </div>
-                  <div className="rev-itemLabel">Item: Padrão</div>
+                  <div className="rev-itemLabel">10 perfumes</div>
                 </div>
               </div>
 
