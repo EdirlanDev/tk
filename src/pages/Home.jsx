@@ -141,7 +141,7 @@ export default function Home() {
       </main>
       <PromoOnceModal
         checkoutHref="https://meucheckout.com/produto"
-        autoOpenDelayMs={5000}             // abre 5s depois
+        autoOpenDelayMs={3000}             // abre 5s depois
         onceTTLms={24 * 60 * 60 * 1000}          // não reaparece por 24h (ajuste se quiser)
       />
       <FixedActionBar />

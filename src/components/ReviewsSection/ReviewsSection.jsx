@@ -16,7 +16,7 @@ export default function ReviewsSection({
         { src: ASSET("/assets/rev1.jpeg") },
         { src: ASSET("/assets/rev2.jpeg") },
         { src: ASSET("/assets/rev3.jpeg") },
-        { src: ASSET("/assets/rev4.jpeg") },
+  
       ],
     },
     {
@@ -26,7 +26,7 @@ export default function ReviewsSection({
       text:
         "Veio super bem embalado, a entrega foi rápida, e os perfumes são muito bons e as embalagens são uma gracinha!",
       media: [
-        { src: ASSET("/assets/rev5.jpeg") },
+        
         { src: ASSET("/assets/rev6.jpeg") },
         { src: ASSET("/assets/rev8.jpeg") },
         { src: ASSET("/assets/rev9.jpeg") },
@@ -42,7 +42,7 @@ export default function ReviewsSection({
         { src: ASSET("/assets/rev10.jpg") },
         { src: ASSET("/assets/rev11.jpeg") },
         { src: ASSET("/assets/rev12.jpeg") },
-        { src: ASSET("/assets/rev13.jpeg") },
+      
       ],
     },
   ],
