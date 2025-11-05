@@ -16,6 +16,8 @@ import ProductRichDesc from '../components/ProductRichDesc/ProductRichDesc.jsx';
 import ProductGrid from '../components/ProductGrid/ProductGrid.jsx';
 import FAQ from '../components/FAQ/FAQ.jsx';
 import FixedActionBar from '../components/FixedActionBar/FixedActionBar.jsx';
+import ShopHeader from '../components/ShopHeader/ShopHeader.jsx';
+import PromoOnceModal from '../components/PromoOnceModal/PromoOnceModal.jsx';
 
 export default function Home() {
   const media = [
@@ -64,7 +66,12 @@ export default function Home() {
             { id: 'recommendations', label: 'Recomendações' },
           ]}
         /> */}
-
+        <ShopHeader
+          avatar={ASSET("/assets/perfumes/loja.png")}
+          name="Caplace Beleza e Perfumes"
+          sold={12000}
+          href="#"
+        />
         {/* ===== Visão geral ===== */}
         <section id="overview" className="ttk-section">
           <CreatorsVideos
@@ -94,29 +101,29 @@ export default function Home() {
           title="FAQ"
           items={[
             {
-      q: 'As fragrâncias são originais?',
-      a: 'Não. São fragrâncias inspiradas em perfumes importados e nacionais famosos, desenvolvidas para oferecer aroma semelhante com excelente fixação.',
-    },
-    {
-      q: 'Posso escolher as fragrâncias?',
-      a: 'Sim. Após realizar a compra, entre em contato pelo chat informando suas preferências. Faremos o possível para atender conforme disponibilidade em estoque.',
-    },
-    {
-      q: 'Qual a durabilidade das fragrâncias?',
-      a: 'A duração média é de até 10 horas, podendo variar conforme o tipo de pele e ambiente.',
-    },
-    {
-      q: 'Qual o tamanho de cada frasco?',
-      a: 'Cada perfume possui 30 ml, ideal para uso pessoal ou revenda.',
-    },
-    {
-      q: 'O produto é lacrado?',
-      a: 'Sim, todos os frascos são enviados lacrados e em embalagens seguras.',
-    },
-    {
-      q: 'O kit é unissex?',
-      a: 'Sim, o kit contém 5 fragrâncias femininas e 5 masculinas, podendo haver variações conforme estoque.',
-    },
+              q: 'As fragrâncias são originais?',
+              a: 'Não. São fragrâncias inspiradas em perfumes importados e nacionais famosos, desenvolvidas para oferecer aroma semelhante com excelente fixação.',
+            },
+            {
+              q: 'Posso escolher as fragrâncias?',
+              a: 'Sim. Após realizar a compra, entre em contato pelo chat informando suas preferências. Faremos o possível para atender conforme disponibilidade em estoque.',
+            },
+            {
+              q: 'Qual a durabilidade das fragrâncias?',
+              a: 'A duração média é de até 10 horas, podendo variar conforme o tipo de pele e ambiente.',
+            },
+            {
+              q: 'Qual o tamanho de cada frasco?',
+              a: 'Cada perfume possui 30 ml, ideal para uso pessoal ou revenda.',
+            },
+            {
+              q: 'O produto é lacrado?',
+              a: 'Sim, todos os frascos são enviados lacrados e em embalagens seguras.',
+            },
+            {
+              q: 'O kit é unissex?',
+              a: 'Sim, o kit contém 5 fragrâncias femininas e 5 masculinas, podendo haver variações conforme estoque.',
+            },
           ]}
         />
         <img
@@ -126,13 +133,17 @@ export default function Home() {
             width: "60%",
             display: "block",
             margin: "12px auto 0",
-            paddingBottom:"30px",
+            paddingBottom: "30px",
             opacity: 0.95,        // leve ajuste estético
           }}
         />
 
       </main>
-
+      <PromoOnceModal
+        checkoutHref="https://meucheckout.com/produto"
+        autoOpenDelayMs={5000}             // abre 5s depois
+        onceTTLms={24 * 60 * 60 * 1000}          // não reaparece por 24h (ajuste se quiser)
+      />
       <FixedActionBar />
     </div>
   );

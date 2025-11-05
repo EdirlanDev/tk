@@ -1,0 +1,31 @@
+.shophead{
+  background:#fff;
+  padding:12px 14px;
+  border-bottom:1px solid rgba(0,0,0,.06);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Arial,sans-serif;
+}
+
+.shophead__wrap{
+  display:flex; align-items:center; gap:12px;
+  text-decoration:none; color:inherit;
+}
+
+.shophead__ava{
+  width:56px; height:56px; border-radius:50%;
+  object-fit:cover;
+  border:1px solid #eee;
+  background:#f3f4f6;
+}
+
+.shophead__meta{ min-width:0; }
+
+.shophead__name{
+  font-weight:900; font-size:18px; line-height:1.2; color:#111;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  max-width:100%;
+}
+
+.shophead__sold{
+  margin-top:2px;
+  color:#6b7280; font-weight:700; font-size:14px;
+}
