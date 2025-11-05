@@ -1,0 +1,56 @@
+.ttk-media__box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Swiper ocupa toda a área */
+.ttk-media__box .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.ttk-media__box .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Imagem / vídeo preenche completamente */
+.ttk-media__img,
+.ttk-media__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* vídeo wrapper */
+.ttk-media__videoWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* contador "1/N" */
+.ttk-media__counter {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 20; /* 🔥 garante que fique acima da imagem e do Swiper */
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 13px;
+  padding: 4px 9px;
+  border-radius: 12px;
+  line-height: 1;
+  pointer-events: none;
+  font-weight: 500;
+}
+
+/* Remove por completo bolinhas de paginação */
+.swiper-pagination {
+  display: none !important;
+}

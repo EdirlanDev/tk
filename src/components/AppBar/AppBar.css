@@ -1,0 +1,50 @@
+.ttk-appbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  color: #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  z-index: 50;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.ttk-appbar__safe {
+  height: env(safe-area-inset-top, 0px);
+}
+
+.ttk-appbar__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+  padding: 6px 14px;
+}
+
+.ttk-icon-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ttk-ic {
+  width: 26px;
+  height: 26px;
+}
+
+.ttk-appbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 22px; /* espaçamento entre ícones à direita */
+}

@@ -1,0 +1,28 @@
+.dtg-overlay {
+  position: fixed; inset: 0;
+  background: rgba(17,17,17,.5);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  display: grid; place-items: center;
+  z-index: 9999;
+}
+
+.dtg-modal {
+  background: #0b0f14;
+  color: #fff;
+  border-radius: 14px;
+  padding: 16px 18px;
+  width: min(92vw, 380px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  text-align: center;
+}
+.dtg-modal h3 { margin: 0 0 8px; font-weight: 900; font-size: 18px; }
+.dtg-modal p  { margin: 0 0 12px; font-weight: 700; font-size: 13px; color:#cbd5e1; }
+
+.dtg-btn {
+  appearance: none; border: 0;
+  background: #111827; color: #fff;
+  padding: 10px 14px; border-radius: 10px;
+  font-weight: 900; font-size: 12px; cursor: pointer;
+}
+.dtg-btn:active { opacity: .9; }

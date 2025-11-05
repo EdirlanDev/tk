@@ -1,0 +1,48 @@
+:root{
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, "Noto Sans", "Inter", sans-serif;
+  --text:#111; --muted:#8B949E;
+}
+
+.rev{ background:#fff; padding:16px 14px; font-family:var(--font); }
+.rev-header{ display:flex; align-items:center; justify-content:space-between; margin-bottom:8px; }
+.rev-title{ margin:0; font-size:20px; font-weight:900; color:#111; }
+.rev-more{ border:0; background:transparent; color:#6b7280; font-weight:800; font-size:16px; cursor:pointer; }
+
+.rev-scoreBox{ display:flex; align-items:center; gap:6px; margin-bottom:14px; }
+.rev-scoreNum{ font-size:20px; font-weight:900; color:#111; }
+.rev-scoreText{ font-size:16px; font-weight:800; color:#6b7280; }
+.rev-stars{ display:flex; gap:2px; }
+.rev-star{ width:18px; height:18px; }
+
+.rev-list{ list-style:none; margin:0; padding:0; }
+.rev-item{ padding:10px 0 14px; border-bottom:1px solid rgba(0,0,0,.05); }
+.rev-user{ display:flex; align-items:center; gap:10px; margin-bottom:6px; }
+
+.rev-ava{
+  width:38px; height:38px; border-radius:50%; object-fit:cover;
+  background:#E5E7EB; display:flex; align-items:center; justify-content:center;
+  font-size:17px; font-weight:900; color:#444; text-transform:uppercase;
+}
+.rev-ava--fallback{ user-select:none; }
+
+.rev-name{ font-size:16px; font-weight:900; color:#111; }
+.rev-starsLine{ display:flex; gap:2px; margin:2px 0; }
+.rev-itemLabel{ color:#9ca3af; font-weight:900; font-size:16px; }
+
+.rev-text{ margin:8px 0 10px; font-size:18px; line-height:1.35; color:#111; font-weight:900; }
+
+.rev-media{ display:flex; gap:10px; flex-wrap:wrap; }
+.rev-thumb{
+  position:relative; width:120px; height:120px; border-radius:12px;
+  overflow:hidden; background:#f3f4f6; flex:0 0 auto;
+}
+.rev-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+/* Ícone de play (quando for vídeo) */
+.rev-play{
+  position:absolute; left:8px; bottom:8px; width:34px; height:34px;
+  border-radius:999px; background:rgba(0,0,0,.6); color:#fff;
+  display:flex; align-items:center; justify-content:center;
+}
+.rev-play svg{ width:18px; height:18px; transform:translateX(1px); }

@@ -1,0 +1,33 @@
+/* Fundo neutro e tipografia consistente */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  background: #f5f6f7;  /* em vez de preto */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Largura do "app" (igual celular) */
+:root { --app-width: 100%; } /* ajuste para 390/400/428 se quiser */
+
+.ttk-shell {
+  width: min(100vw, var(--app-width));
+  min-height: 100dvh;
+  margin: 0 auto;
+  background: #fff;         /* nada de colunas escuras nas laterais */
+  position: relative;
+}
+
+/* Construtos "full-bleed" que devem seguir a largura do shell */
+.ttk-fullbleed {
+  width: 100%;
+  max-width: var(--app-width);
+  margin: 0 auto;
+}
+
+/* Barras fixas/pegajosas devem alinhar ao shell */
+.ttk-fixed-fit {
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(100vw, var(--app-width));
+}

@@ -1,0 +1,141 @@
+:root{
+  --ttk-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ttk-magenta: #e50057;        /* magenta do preço */
+  --ttk-magenta-dark: #c60048;
+  --ttk-gray-900: #111;
+  --ttk-gray-700: #6b7280;
+  --ttk-gray-500: #9aa0a6;
+  --ttk-border: 1px solid rgba(0,0,0,0.06);
+  --ttk-rose-bg: #ffe6ec;        /* fundo rosa claro da faixa */
+  --ttk-rose-text: #e50057;
+}
+
+/* bloco branco como no print */
+.ttk-price{
+  background:#fff;
+  padding: 12px 14px 12px;
+  border-bottom: var(--ttk-border);
+  font-family: var(--ttk-font);
+}
+
+/* --- Linha 1 --- */
+.ttk-price__top{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+}
+
+.ttk-price__badge{
+  background: var(--ttk-magenta);
+  color:#fff;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 1;
+  padding: 7px 10px;
+  border-radius: 10px;
+  letter-spacing: .2px;
+  display:inline-flex;
+}
+
+.ttk-price__numbers{
+  display:flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* preço atual grande e vermelho */
+.ttk-price__currentWrap{
+  display:flex;
+  align-items: baseline;
+  gap: 6px;
+  color: var(--ttk-magenta);
+}
+
+.ttk-price__currency{
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.ttk-price__current{
+  font-weight: 900;
+  font-size: 34px;          /* bem próximo ao print */
+  line-height: 1;
+  letter-spacing: -0.3px;
+  font-feature-settings: "lnum" 1, "kern" 1;
+}
+
+/* ícone de cupom pequenino ao lado do preço */
+.ttk-price__coupon{
+  width: 18px;
+  height: 18px;
+  color: var(--ttk-magenta);
+  margin-left: 2px;
+}
+
+/* preço riscado em cinza escuro, na mesma linha do preço atual */
+.ttk-price__original{
+  margin-top: 2px;
+  color: #757575;
+  text-decoration: line-through;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: .1px;
+}
+
+/* --- Linha 2: parcelas --- */
+.ttk-price__installmentsRow{
+  margin-top: 10px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ttk-price__installmentsLeft{
+  display:flex;
+  align-items:center;
+  gap: 8px;
+}
+
+.ttk-price__cardIcon{
+  width: 22px;
+  height: 22px;
+  color: #000;
+}
+
+.ttk-price__installmentsText{
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+.ttk-price__noInterest{
+  color: var(--ttk-magenta);
+  font-weight: 800;
+}
+
+.ttk-price__chev{
+  width: 18px;
+  height: 18px;
+  color: #9aa0a6;
+}
+
+/* --- Faixa rosa de promoção --- */
+.ttk-price__promo{
+  display:flex;
+  align-items:center;
+  gap: 8px;
+  margin-top: 12px;
+  background: var(--ttk-rose-bg);
+  color: var(--ttk-rose-text);
+  font-size: 15px;
+  font-weight: 800;
+  padding: 10px 12px;
+  border-radius: 12px;
+}
+
+.ttk-price__promoIcon{
+  width: 18px;
+  height: 18px;
+}

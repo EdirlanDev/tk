@@ -1,0 +1,93 @@
+.ttk-fab-spacer {
+  height: 74px;
+}
+
+/* ====== FOOTER FIXO ====== */
+.ttk-fab {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.04);
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+    Roboto, Arial, sans-serif;
+}
+
+/* ====== LOJA / CHAT ====== */
+.ttk-fab__left {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.ttk-mini {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #111;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.ttk-mini__ic {
+  font-size: 26px;
+  color: #000;
+  margin-bottom: 2px;
+}
+
+.ttk-mini__txt {
+  font-size: 13px;
+  font-weight: 800;
+  color: #000;
+}
+
+/* ====== BOTÕES DIREITA ====== */
+.ttk-fab__right {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.ttk-btn {
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1.1;
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 120px;
+  box-shadow: 0 0 0 0 transparent;
+  transition: all 0.2s ease;
+}
+
+.ttk-btn--ghost {
+  background: #f3f4f6;
+  color: #000;
+}
+
+.ttk-btn--primary {
+  
+  background: #b60020;
+  color: #fff;
+}
+
+.ttk-btn__lines span {
+  display: block;
+}
+
+.ttk-btn:hover {
+  transform: scale(0.98);
+}

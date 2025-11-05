@@ -1,0 +1,23 @@
+:root { --bg:#0b0f14; --text:#e6e8ee; }
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dissuasão leve: dificulta seleção/cópia por engano */
+.no-select, body.no-select * {
+  user-select: none;
+}
+
+/* Camada anti-context menu sobre imagens */
+.media-guard {
+  position: relative;
+}
+.media-guard::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: transparent;
+  pointer-events: auto;
+}

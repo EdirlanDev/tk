@@ -1,0 +1,65 @@
+:root{
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, "Noto Sans", "Inter", sans-serif;
+  --line: rgba(0,0,0,.06);
+  --text:#111;
+  --muted:#000000;
+  --link:#1e40af; /* azul do "Ver mais/menos" */
+}
+
+.pd{ background:#fff; font-family:var(--font); padding:14px; border-bottom:1px solid var(--line); }
+.pd-title{ margin:0 0 10px; font-size:22px; font-weight:900; color:#000; }
+.pd-subtitle{ margin:14px 0 8px; font-size:18px; font-weight:900; color:#000; }
+
+/* Tabela Detalhes */
+.pd-table{ margin-bottom:6px; }
+.pd-row{ display:grid; grid-template-columns: 165px 1fr; gap:10px; padding:8px 0; }
+.pd-key{ color:#1a1b1d; font-weight:900; font-size:16px; }
+.pd-val{ color:#121213; font-weight:800; font-size:10px; }
+
+/* Vídeo */
+.pd-videoWrap{ position:relative; border-radius:16px; overflow:hidden; background:#000; }
+.pd-video{ width:100%; aspect-ratio:16/9; object-fit:cover; display:block; }
+.pd-play{
+  position:absolute; inset:auto; left:50%; top:50%; transform:translate(-50%,-50%);
+  width:74px; height:74px; border-radius:999px; background:#fff; color:#000;
+  display:flex; align-items:center; justify-content:center; box-shadow:0 6px 24px rgba(0,0,0,.25);
+}
+.pd-play svg{ width:34px; height:34px; transform:translateX(2px); }
+
+/* Descrição */
+.pd-desc{
+  position:relative;
+  color:#111; font-size:16px; font-weight:700; line-height:1.45;
+  max-height: 370px;           /* recorte como na captura */
+  overflow:hidden;
+}
+.pd-desc.is-open{ max-height:none; }
+.pd-desc__html p{ margin:10px 0; }
+.pd-desc__html strong{ font-weight:900; }
+
+/* Fade que some ao abrir */
+.pd-desc__fade{
+  position:absolute; left:0; right:0; bottom:0; height:72px;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #fff 70%);
+}
+
+/* Botões Ver mais / Ver menos (posições iguais às capturas) */
+.pd-toggle{
+  display:flex;justify-content: center; align-items: center; width:max-content; margin:10px auto 0;
+  border:0; background:transparent; color:#000;
+  font-size:22px; font-weight:900; letter-spacing:.2px; cursor:pointer;
+}
+.pd-toggle--more{ color:#494949d2; }   /* no app o texto é bem escuro */
+.pd-toggle--less{ color:#575656a8; margin-top:14px; }
+.pd-caret{ margin-left:6px; }
+
+/* Imagens grandes empilhadas */
+.pd-rich{ margin-top:12px; }
+.pd-richItem{ margin:0 0 12px; border-radius:14px; overflow:hidden; background:#f3f4f6; }
+.pd-richItem img{ width:100%; height:auto; display:block; }
+
+/* Responsivo: coluna de chave um pouco menor em telas estreitas */
+@media (max-width:390px){
+  .pd-row{ grid-template-columns:150px 1fr; }
+}

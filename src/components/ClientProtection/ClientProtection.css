@@ -1,0 +1,119 @@
+:root{
+  --ttk-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+              Roboto, "Helvetica Neue", Arial, "Noto Sans", "Inter", sans-serif;
+  --gold:#9a6a1d;
+  --gold-strong:#7a5014;
+  --gold-bg:#fff6ea;          /* bege do print */
+  --tick:#d6a25c;
+  --text:#000000;
+  --muted:#6b7280;
+  --line:rgba(0,0,0,.06);
+}
+
+/* bloco principal (fundo bege claro) */
+.ttk-protect{
+  background: linear-gradient(180deg,#fffdf9, var(--gold-bg));
+  border-bottom:1px solid var(--line);
+  font-family:var(--ttk-font);
+  padding:12px 14px 14px;
+}
+
+/* barra “Proteção do cliente” */
+.ttk-protect__bar{
+  width:100%;
+  appearance:none; background:transparent; border:0;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0; margin:0 0 8px 0; cursor:pointer;
+}
+
+.ttk-protect__barLeft{ display:flex; align-items:center; gap:8px; }
+.ttk-protect__shield{ width:20px; height:20px; color:var(--gold); }
+.ttk-protect__title{
+  margin:0; font-size:18px; font-weight:900; color:var(--gold-strong);
+}
+.ttk-protect__chev{ width:18px; height:18px; color:var(--gold-strong); }
+
+/* lista de 2 colunas com tique amarelo */
+.ttk-protect__list{
+  list-style:none; padding:8px 0 0; margin:0;
+  display:grid; grid-template-columns:1fr 1fr; gap:10px 18px;
+}
+.ttk-protect__item{ display:flex; align-items:center; gap:8px; }
+.ttk-protect__tick{
+  color:var(--tick); font-size:16px; line-height:1; display:inline-flex;
+}
+.ttk-protect__txt{ color:#424242; font-weight:800; font-size:18px; }
+
+/* cupom (opcional) */
+.ttk-coupon{
+  display:none; /* o print não mostra cupom aqui; ative se precisar */
+}
+.ttk-coupon__left{ display:flex; flex-direction:column; }
+.ttk-coupon__btn{}
+
+/* ---------------- Modal sheet ---------------- */
+.ttk-protect__overlay{
+  position:fixed; inset:0; background:rgba(0,0,0,.42); z-index:80;
+}
+
+.ttk-protect__sheet{
+  position:fixed; left:0; right:0; bottom:0; z-index:90;
+  background:#fff;
+  border-top-left-radius:18px; border-top-right-radius:18px;
+  box-shadow:0 -10px 30px rgba(0,0,0,.15);
+  max-height:80vh; display:flex; flex-direction:column;
+  padding-bottom: 30px;
+}
+
+.ttk-protect__sheetHead{
+  display:flex; align-items:center; justify-content:center;
+  position:relative; padding:14px 16px 6px;
+  border-bottom:1px solid var(--line);
+}
+.ttk-protect__sheetHead h4{ margin:0; font-size:20px; font-weight:900; color:#111; }
+.ttk-protect__close{
+  position:absolute; right:8px; top:8px; width:36px; height:36px;
+  border:0; background:transparent; color:#111; border-radius:999px; cursor:pointer;
+}
+
+.ttk-protect__hero{
+  background:linear-gradient(135deg,#fffaf0,#f9efe1);
+  padding:14px 16px;
+}
+.ttk-protect__heroShield{
+  width:64px; height:64px; border-radius:18px;
+  background:linear-gradient(180deg,#b98539,#8d611f);
+  color:#fff; display:flex; align-items:center; justify-content:center;
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,.25);
+  margin-left:auto; margin-right:16px;
+}
+.ttk-protect__heroShield svg{ width:36px; height:36px; }
+
+.ttk-protect__sheetBody{
+  padding:6px 16px 24px; overflow:auto;
+}
+
+.ttk-protect__block{ padding:14px 0; border-bottom:1px solid var(--line); }
+.ttk-protect__block.ttk--last{ border-bottom:0; }
+.ttk-protect__blockHead{ display:flex; align-items:center; gap:10px; margin-bottom:6px; }
+.ttk-protect__blockIcon{
+  width:28px; height:28px; border-radius:8px; display:inline-flex;
+  align-items:center; justify-content:center; background:#f5efe4; color:#8d611f;
+}
+.ttk--gold{ background:#f5efe4 !important; color:#8d611f !important; }
+.ttk-protect__block h5{ margin:0; font-size:18px; font-weight:900; color:#8d611f; }
+.ttk-protect__block p{ margin:6px 0 0; color:#111; font-size:14px; font-weight:600; }
+.ttk-protect__link{ color:#1d4ed8; font-weight:700; text-decoration:none; }
+
+.ttk-protect__badges{
+  display:flex; gap:8px; flex-wrap:wrap; margin-top:8px;
+}
+.ttk-protect__badges span{
+  font-size:12px; font-weight:700; color:#555; background:#f3f4f6;
+  padding:6px 8px; border-radius:8px;
+}
+
+/* Responsivo: 1 coluna em telas estreitas */
+@media (max-width: 380px){
+  .ttk-protect__list{ grid-template-columns:1fr; }
+}

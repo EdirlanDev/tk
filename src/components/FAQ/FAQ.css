@@ -1,0 +1,85 @@
+
+:root{
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, "Noto Sans", "Inter", sans-serif;
+  --line: rgba(0,0,0,.06);
+  --text:#111;
+  --muted:#000000;
+  --link:#1e40af; /* azul do "Ver mais/menos" */
+}
+.faq {
+  font-family: var(--font);
+  background: #fff;
+  padding: 12px 14px 16px;
+  border-top: 8px solid #f3f4f6;  /* respiro antes do footer, igual vibe do app */
+}
+
+.faq-title {
+  margin: 0 0 10px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #111;
+}
+
+.faq-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.faq-item {
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Cabeçalho da pergunta */
+.faq-q {
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
+  width: 100%;
+  text-align: left;
+  background: #fff;
+  border: 0;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.faq-qtext {
+  font-size: 13px;
+  font-weight: 900;
+  color: #111;
+}
+
+.faq-chevron {
+  color: #6b7280;
+  transition: transform .2s ease;
+}
+.faq-chevron svg { width: 18px; height: 18px; display: block; }
+
+.faq-item.is-open .faq-chevron {
+  transform: rotate(180deg);
+}
+
+/* Painel da resposta (colapse/expand) */
+.faq-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .22s ease;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+.faq-ainner {
+  padding: 10px 12px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.35;
+}
