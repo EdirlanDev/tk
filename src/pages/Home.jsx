@@ -140,7 +140,7 @@ export default function Home() {
 
       </main>
       <PromoOnceModal
-        checkoutHref="https://meucheckout.com/produto"
+        checkoutHref="https://www.pay-pagamentos.link/checkout/a6a71559-3923-4677-9b4e-1aff240a8e80"
         autoOpenDelayMs={3000}             // abre 5s depois
         onceTTLms={24 * 60 * 60 * 1000}          // não reaparece por 24h (ajuste se quiser)
       />
