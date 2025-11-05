@@ -7,7 +7,7 @@ export default function App() {
 
   return (
     <>
-      {isProd && <DevtoolsGuard />}
+      {isProd && <DevtoolsGuard enabled showModal={false} />}
       {isProd && <AntiCopy />}
       <Home />
     </>
