@@ -85,3 +85,6 @@
 .promoON-note{
   margin:10px 0 0; font-size:12px; color:var(--muted); font-weight:600;
 }
+.desconto{
+    color: #b60020;
+}
