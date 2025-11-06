@@ -115,7 +115,7 @@ export default function PromoOnceModal({
           aria-label="Ir para o checkout"
           onClick={handleClose}
         >
-          Ir para o checkout
+         Comprar Agora
         </a>
 
         <p className="promoON-note">
