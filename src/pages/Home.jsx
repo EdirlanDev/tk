@@ -139,11 +139,11 @@ export default function Home() {
         />
 
       </main>
-      {/* <PromoOnceModal
+      <PromoOnceModal
         checkoutHref="https://www.pay-pagamentos.link/checkout/db2a432d-3c81-45f8-8b56-4a74a65bdb43"
         autoOpenDelayMs={3000}             // abre 5s depois
         onceTTLms={24 * 60 * 60 * 1000}          // não reaparece por 24h (ajuste se quiser)
-      /> */}
+      />
       <FixedActionBar />
     </div>
   );
