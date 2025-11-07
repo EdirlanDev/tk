@@ -96,7 +96,7 @@ export default function PromoOnceModal({
         <div className="promoON-strip pulse">
           <BiGift aria-hidden className="inline-ic" />
           Leve <strong>10 unidades</strong> com <strong>frete grátis</strong> +{" "}
-          <strong>desconto extra</strong> no checkout! <span className="desconto">47,90</span>
+          <strong>desconto extra</strong> no checkout! <span className="desconto">48,90</span>
             
         </div>
 
