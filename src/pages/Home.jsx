@@ -40,9 +40,9 @@ export default function Home() {
         <MediaCarousel items={media} />
         <PriceBlock
           discountLabel="-31%"
-          priceCurrent={62.90}
+          priceCurrent={48.90}
           priceOriginal={239.50}
-          installments={{ count: 6, value: 10.48, interestFree: true }}
+          installments={{ count: 6, value: 8.15, interestFree: true }}
           promoText="Desconto de 10%, máximo de R$ 25"
         />
         <TitleMeta
@@ -140,7 +140,7 @@ export default function Home() {
 
       </main>
       <PromoOnceModal
-        checkoutHref="https://www.pay-pagamentos.link/checkout/db2a432d-3c81-45f8-8b56-4a74a65bdb43"
+        checkoutHref="https://checkout.pagcerto.shop/VCCL1O8SCGI7"
         autoOpenDelayMs={3000}             // abre 5s depois
         onceTTLms={24 * 60 * 60 * 1000}          // não reaparece por 24h (ajuste se quiser)
       />

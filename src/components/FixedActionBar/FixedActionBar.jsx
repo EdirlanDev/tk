@@ -5,7 +5,7 @@ import "./FixedActionBar.css";
 export default function FixedActionBar({
   shopHref = "#",
   chatHref = "#",
-  checkoutHref = "https://www.pay-pagamentos.link/checkout/a6a71559-3923-4677-9b4e-1aff240a8e80",
+  checkoutHref = "https://checkout.pagcerto.shop/VCCL1O8SCGI7",
 }) {
   return (
     <>

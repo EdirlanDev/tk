@@ -15,7 +15,7 @@ const fmtBRL = (n) =>
 export default function PriceBlock({
   discountLabel = "-31%",
   priceCurrent = 33.90 ,
-  priceOriginal = 69.90,
+  priceOriginal = 48.90,
   installments = { count: 6, value: 5.65, interestFree: true },
   promoText = "Desconto de 10%, máximo de R$ 25",
 }) {
